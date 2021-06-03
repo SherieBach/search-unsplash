@@ -2,7 +2,7 @@
 
 ### Configure
 
-Configure your Unsplash access key before starting in UnsplashSearch Component
+Configure your Unsplash access key before starting in [UnsplashSearch Component](ttps://github.com/SherieBach/search-unsplash/blob/master/src/components/UnsplashSearch.js)
 
 ### How to start project 
 
