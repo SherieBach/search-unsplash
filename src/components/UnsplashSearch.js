@@ -70,7 +70,7 @@ class UnsplashSearch extends React.Component {
     }
 
     isBottomOfPage(el) {
-        return el.getBoundingClientRect().bottom <= window.innerHeight + 10;
+        return el.getBoundingClientRect().bottom <= window.innerHeight + 400;
     }
 
     getScrollEvent = () => {
