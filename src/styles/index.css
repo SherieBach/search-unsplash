@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Montserrat', cursive;
+
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #926AA6;
+    width: auto;
+    height: 30rem;
+}
+
+.hero-content {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.hero-title {
+    color: #faddac;
+    font-family: 'Kaushan Script', sans-serif;
+    margin-bottom: 0;
+    font-size: 46px;
+    word-break: break-word;
+}
+
+.hero-content > p {
+    display: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    padding: 2rem;
+}
+
+.input {
+    width: 370px;
+    background-color: #faddac;
+    padding: 8px;
+    color: #212121;
+    font-size: 1.2rem;
+    border: #faddac solid 1px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.input:focus {
+    outline: none;
+    border: #926AA6 1px solid;
+}
+
+
+.submit-button {
+    width: 120px;
+    height: auto;
+    background-color: #faddac;
+    color: #333333;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    border: #faddac solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-button:focus {
+    border: #926AA6 1px solid;
+    outline: none;
+}
+
+.submit-button:active {
+    background-color: #faddac;
+}
+
+.submit-button:disabled {
+    background-color: #c2c2c2;
+    color: #e5dada;
+    pointer-events: auto;
+    border: none;
+}
+
+main {
+    margin: 2rem auto;
+    padding-top: 20px;
+    width: 70%;
+}
+
+.card-image-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card {
+    opacity: 1;
+    animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .card-image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-title {
+        font-size: 8vw;
+    }
+    .hero-content > p {
+        display: block;
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .card-image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-title {
+        font-size: 8vw;
+    }
+
+    .hero-content > p {
+        display: block;
+        font-size: 2vw;
+    }
+}
