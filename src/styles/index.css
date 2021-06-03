@@ -42,12 +42,15 @@ body, html {
     display: none;
 }
 
-form {
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 10px;
     padding: 2rem;
+    position: sticky;
+    top:0;
+    z-index:100;
 }
 
 .input {
@@ -72,8 +75,8 @@ form {
     height: auto;
     background-color: #faddac;
     color: #333333;
-    font-size: 1.2rem;
-    padding: 10px 5px;
+    font-size: 1.1rem;
+    padding: 9px 5px;
     border: #faddac solid 1px;
     border-radius: 3px;
     cursor: pointer;

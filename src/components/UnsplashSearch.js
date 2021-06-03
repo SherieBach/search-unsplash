@@ -5,14 +5,15 @@ import '../styles/index.css'
 
 
 const unsplash = createApi({
-    accessKey: "Your Key",
+    accessKey: "XDqoq1sLKOFKZBG8YHB2AQtSBolKVdxM17BDFA2PfNw",
 });
 
 const initialState = {
     query: "",
     images: [],
     page: 1,
-    atBottom: false
+    atBottom: false,
+    visible: false
 }
 
 /**
@@ -35,6 +36,9 @@ class UnsplashSearch extends React.Component {
     }
 
     componentDidMount() {
+        document.addEventListener('scroll', this.getScrollEvent);
+    }
+    componentWillUnmount() {
         document.addEventListener('scroll', this.getScrollEvent);
     }
 
@@ -76,7 +80,6 @@ class UnsplashSearch extends React.Component {
     getScrollEvent = () => {
         const app = document.getElementById('app');
         if (!this.state.isBottom && this.isBottomOfPage(app) && this.state.query !== "") { // making sure this runs once containing a string until we get new images
-
             this.setState(prevState => ({
                 ...prevState,
                 isBottom: true
