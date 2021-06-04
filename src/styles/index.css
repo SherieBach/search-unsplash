@@ -70,17 +70,17 @@ body, html {
     position: sticky;
     top: 0;
     z-index: 100;
-}
 
+}
 .input {
     width: 370px;
     background-color: #faddac;
     padding: 8px;
-    color: #212121;
     font-size: 1.2rem;
     border: #faddac solid 1px;
     border-radius: 3px;
     margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .input:focus {
@@ -92,13 +92,14 @@ body, html {
 .submit-button {
     width: 120px;
     height: auto;
-    background-color: #cc7977;
-    color: #333333;
+    background-color: #ca9795;
+    color: #f2f2f2;
     font-size: 1.1rem;
     padding: 9px 5px;
     border: #faddac solid 1px;
     border-radius: 3px;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .submit-button:focus {
@@ -113,7 +114,6 @@ body, html {
 .submit-button:disabled {
     background-color: #c2c2c2;
     color: #e5dada;
-    pointer-events: auto;
     border: none;
 }
 
@@ -183,7 +183,7 @@ main {
     .hero-content > p {
         display: block;
         font-size: 2vw;
-        color: #212121;
+        color: #f2f2f2;
         font-weight: bold;
     }
 
