@@ -16,7 +16,10 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #926AA6;
+    flex-direction: column;
+    background: url("../images/luca-dugaro-tuueCVnYN0s-unsplash.jpg"), center, no-repeat;
+    background-size: cover;
+    position: relative;
     width: auto;
     height: 30rem;
 }
@@ -35,10 +38,27 @@ body, html {
     margin-bottom: 0;
     font-size: 46px;
     word-break: break-word;
+    text-shadow: 0 3px 0 #b2a98f,
+    0 14px 10px rgba(0, 0, 0, 0.15),
+    0 24px 2px rgba(0, 0, 0, 0.1),
+    0 24px 30px rgba(0, 0, 0, 0.1);
 }
 
 .hero-content > p {
     display: none;
+}
+
+.hero-attribution {
+    font-size: 1.5vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px;
+}
+
+.hero-attribution, .hero-attribution > a {
+    color: #ffeccc;
+    text-decoration: none;
 }
 
 .form {
@@ -48,8 +68,8 @@ body, html {
     margin: 0 10px;
     padding: 2rem;
     position: sticky;
-    top:0;
-    z-index:100;
+    top: 0;
+    z-index: 100;
 }
 
 .input {
@@ -65,14 +85,14 @@ body, html {
 
 .input:focus {
     outline: none;
-    border: #926AA6 1px solid;
+    border: #cc7977 1px solid;
 }
 
 
 .submit-button {
     width: 120px;
     height: auto;
-    background-color: #faddac;
+    background-color: #cc7977;
     color: #333333;
     font-size: 1.1rem;
     padding: 9px 5px;
@@ -136,12 +156,18 @@ main {
     .card-image-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .hero-title {
         font-size: 8vw;
     }
+
     .hero-content > p {
         display: block;
         font-size: 2vw;
+    }
+
+    .hero-attribution {
+        font-size: 1vw;
     }
 }
 
@@ -157,5 +183,11 @@ main {
     .hero-content > p {
         display: block;
         font-size: 2vw;
+        color: #212121;
+        font-weight: bold;
+    }
+
+    .hero-attribution {
+        font-size: 1vw;
     }
 }
