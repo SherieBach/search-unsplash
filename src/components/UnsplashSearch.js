@@ -5,7 +5,7 @@ import '../styles/index.css'
 
 
 const unsplash = createApi({
-    accessKey: "XDqoq1sLKOFKZBG8YHB2AQtSBolKVdxM17BDFA2PfNw",
+    accessKey: "Your unsplash key",
 });
 
 const initialState = {
