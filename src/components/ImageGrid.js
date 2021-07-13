@@ -10,24 +10,24 @@ import '../styles/index.css'
 
 const ImageGrid = (props) => {
 
-    return (
-        <>
-            <main>
-                <div className="card-image-gallery">
-                    {props.value.map(image =>
-                        <div key={image.id}
-                             className="card">
-                            <img
-                                className="card-image"
-                                alt={image.description}
-                                src={image.url}
-                            />
-                        </div>
-                    )}
-                </div>
-            </main>
-        </>
-    );
-}
+        return (
+            <>
+                <main>
+                    <div className="card-image-gallery">
+                        {props.value.map(image =>
+                            <div key={image.id}
+                                 className="card">
+                                <img
+                                    className="card-image"
+                                    alt={image.description}
+                                    src={image.url}
+                                />
+                            </div>
+                        )}
+                    </div>
+                </main>
+            </>
+        );
+    }
 
 export default ImageGrid;
