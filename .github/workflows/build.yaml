@@ -30,7 +30,7 @@ jobs:
           config: ${{ secrets.KUBE_CONFIG_DATA }}
           version: v1.21.0
           command: --namespace sherie set image --record deployment/unsplash-search unsplash-search=sheriebach/unsplash-search:${{ github.sha }}
-       name: verify deployment
+      - name: verify deployment
         uses: steebchen/kubectl@v2.0.0
         with:
           config: ${{ secrets.KUBE_CONFIG_DATA }}
