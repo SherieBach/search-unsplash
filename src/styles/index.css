@@ -80,6 +80,8 @@ body, html {
     font-size: 1.2rem;
     border: #faddac solid 1px;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     margin-right: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
