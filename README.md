@@ -9,3 +9,5 @@ Configure your Unsplash access key before starting in [UnsplashSearch Component]
 nmp install & nmp start
 
 Go to local browser: http://localhost:3000/
+
+or directly to https://unsplash.sherie.se/
